@@ -20,7 +20,9 @@ def get_articles(driver, link):
     while i < 40:
         try:
             
-            xem_them_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[contains(@class, 'list__viewmore') and contains(@class, 'list__center') and contains(@class, 'view_more') and @title='Xem thêm']")))
+            xem_them_button = wait.until(EC.element_to_be_clickable((By.XPATH, 
+            "//div[contains(@class, 'list__viewmore') and contains(@class, 'list__center') 
+            and contains(@class, 'view_more') and @title='Xem thêm']")))
             xem_them_button.click()
             print('xem them')
             i += 1
